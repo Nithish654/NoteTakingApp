@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#EA1A1A"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Enter your note here..." />
+
+    <Button
+        android:id="@+id/buttonAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNote"
+        android:layout_marginStart="16dp"
+        android:text="Add Note" />
+
+    <Button
+        android:id="@+id/buttondeletenote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNote"
+        android:layout_alignLeft="@id/editTextNote"
+        android:layout_marginLeft="268dp"
+        android:layout_marginTop="0dp"
+        android:background="#D10B0B"
+        android:text="Delete Note" />
+
+    <ListView
+        android:id="@+id/listViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonAddNote"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
